@@ -236,8 +236,10 @@
 
 
 # class Box
+
 # 	def initialize(w,h)
-# 		@width, @height = w,h
+# 		@width = w
+# 		@height = h
 # 	end
 
 # 	#accessor method
@@ -253,7 +255,7 @@
 
 # 	#setter method 
 
-# 	def setHeighttWidth = (value)
+# 	def setWidth = (value)
 # 		@width = value
 # 	end
 
@@ -262,7 +264,6 @@
 # 	end
 	
 
- 	
 
 # end
 
@@ -289,27 +290,61 @@
 
 #Instance Method 
 
-class Box
+# class Box
 	
-	# Constructor Method
+# 	# Constructor Method
+
+# 	def initialize(w,h)
+# 		@width, @height = w,h
+
+# 	end
+
+# 	#Instance method create
+
+# 	def getArea
+# 		@width * @height
+# 	end
+
+# end
+
+# box =Box.new 5, 7
+
+# a = box.getArea()
+
+# puts "Area Of box is : #{a}"
+
+
+
+#-------------------------------******************************-------------------------------
+
+
+#Class Method and variabels
+
+class Box
+	# initialize class variables
+
+	@@count = 0
 
 	def initialize(w,h)
-		@width, @height = w,h
 
+		#assign instance varibles 
+		@width , @height = w, h
+
+
+		@@count += 1
 	end
 
-	#Instance method create
-
-	def getArea
-		@width * @height
+	#create class method 
+	def self.printCount()
+		puts "Box count is : #@@count"
 	end
-
 end
 
-box =Box.new 5, 7
+box1 = Box.new 9,8
+box2 = Box.new 5,9
 
-a = box.getArea()
+Box.printCount()
 
-puts "Area Of box is : #{a}"
+
 
 
