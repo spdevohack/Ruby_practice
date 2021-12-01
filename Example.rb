@@ -235,47 +235,81 @@
 # similarly t0 accessor methods, ruby provides a way to set the values of those variables form outside the calss using sette methods 
 
 
-class Box
-	def initialize(w,h)
-		@width, @height =w,height
-	end
+# class Box
+# 	def initialize(w,h)
+# 		@width, @height = w,h
+# 	end
 
-	#accessor method
+# 	#accessor method
 
-	def getWidth
-		@width
-	end
-	def getHeight
-		@height
-	end
+# 	def getWidth
+# 		@width
+# 	end
+
+# 	def getHeight
+# 		@height
+# 	end
 
 
-	#setter method 
+# 	#setter method 
 
-	def setWidth = (value)
-		@width = value
-	end
+# 	def setHeighttWidth = (value)
+# 		@width = value
+# 	end
 
-	def setHeight = (value)
-		@height = value
-	end
+# 	def setHeight = (value)
+# 		@height = value
+# 	end
 	
 
  	
 
+# end
+
+
+# box = Box.new(10,20)
+
+
+# box.setWidth = 50
+# box.setHeight = 70
+
+
+# x= box.getWidth()
+# y= box.getHeight()
+
+# puts "Width is : #{x}"
+
+# puts "Height is : #{y}"
+
+
+
+
+
+#-----------------------*******************************----------------------------
+
+#Instance Method 
+
+class Box
+	
+	# Constructor Method
+
+	def initialize(w,h)
+		@width, @height = w,h
+
+	end
+
+	#Instance method create
+
+	def getArea
+		@width * @height
+	end
+
 end
 
+box =Box.new 5, 7
 
-box = Box.new(10,20)
+a = box.getArea()
+
+puts "Area Of box is : #{a}"
 
 
-box.setWidth = 50
-box.setHeight = 70
-
-
-x= box.getWidth()
-y= box.getHeight()
-
-puts "Width is : #{x}"
-
-puts "Height is : #{y}"
