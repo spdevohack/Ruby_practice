@@ -416,3 +416,16 @@
 
 
 
+# s=%{ruby is new }
+# s= %Q{ruby is not easy}
+s= %q[ruby is many-functional;]
+# p s 
+# # p %x!ls!
+i= 7
+# p s * i   # print string  multiple times  
+
+j= ' this is not a string'
+p  s + j    #concanate string
+
+
+
