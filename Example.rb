@@ -262,7 +262,7 @@
 # 	def setHeight = (value)
 # 		@height = value
 # 	end
-	
+
 
 
 # end
@@ -320,30 +320,98 @@
 
 #Class Method and variabels
 
-class Box
-	# initialize class variables
+# class Box
+# 	# initialize class variables
 
-	@@count = 0
+# 	@@count = 0
 
-	def initialize(w,h)
+# 	def initialize(w,h)
 
-		#assign instance varibles 
-		@width , @height = w, h
+# 		#assign instance varibles 
+# 		@width , @height = w, h
 
 
-		@@count += 1
-	end
+# 		@@count += 1
+# 	end
 
-	#create class method 
-	def self.printCount()
-		puts "Box count is : #@@count"
-	end
-end
+#   # define to_s method for string represntation of object
 
-box1 = Box.new 9,8
-box2 = Box.new 5,9
+# 	def to_s
+# 		"(w:#{@width} h:#{@height})"
+# 	end
 
-Box.printCount()
+# 	#create class method 
+# 	def self.printCount()
+# 		puts "Box count is : #@@count"
+# 	end
+# end
+
+# box1 = Box.new 9,8
+# box2 = Box.new 5,9
+
+# Box.printCount()
+
+# puts "String representation of Box is : #{box1}"
+
+
+#----------------------------***************************************_-----------------------------------
+
+
+#Access control 
+
+# class Box
+
+
+# 	def initialize(w,h)
+# 		@width, @height = w, h
+# 	end
+
+
+# #instance method
+
+# 	def getArea
+# 		getWidth()  * getHeight()
+# 	end
+
+
+# # Getter method
+
+# 	def getWidth
+# 		@width
+# 	end
+
+# 	def getHeight
+# 		@height
+# 	end
+
+# 	private :getWidth, :getHeight  # declare private method
+
+
+#instance method to print area
+
+
+# 	def printArea
+# 		@area = getWidth()  * getHeight()
+# 		puts "Box area is : #{@area}"
+# 	end
+
+#   protected :printArea    # make it protected method
+
+# end
+
+
+# box = Box.new(40,50)
+
+# #calling  public instance method
+		
+# a = box.getArea()
+# puts "Area of public method box is : #{a}"
+
+
+# #calling private instance method
+
+# # b = box.printArea
+# # puts "Area of private method box is : #{b}"
 
 
 
