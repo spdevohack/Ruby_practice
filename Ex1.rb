@@ -430,13 +430,13 @@
 
 
 # s="90" 
-# # p s * 3   #multiply string
+# p s * 3   #multiply string
 
 
-# # v = "100"
-# # p s + v    #concanate
+# v = "100"
+# p s + v    #concanate
 
-# # v= "123"
+# v= "123"
 
 # v = "Hello!!"
 
@@ -449,26 +449,26 @@
 
 
 
-# # fibbonacci series 
+# # # fibbonacci series 
 
 
-# # def fib()
+# def fib()
 
-# # 	a = 0 
-# # 	b = 1
-# # 	for i in (0..10)
+# 	a = 0 
+# 	b = 1
+# 	for i in (0..10)
 
-# # 		if i <= 1 
-# # 			 c = i
-# # 			 # puts c
-# # 		else
-# # 			c = a + b 
-# # 			a = b 
-# # 			b = c
-# # 		end
-# # 	puts c	
+# 		if i <= 1 
+# 			 c = i
+# 			 # puts c
+# 		else
+# 			c = a + b 
+# 			a = b 
+# 			b = c
+# 		end
+# 	puts c	
 
-# # 	end			
-# # end
+# 	end			
+# end
 
-# # fib()
+# fib()
